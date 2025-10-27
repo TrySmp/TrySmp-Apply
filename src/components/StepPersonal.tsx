@@ -22,9 +22,9 @@ export default function StepPersonal({ data, update, errors }: StepProps) {
       {/* Grid layout */}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
         <FormInput
-          label="Full Name"
+          label="First Name"
           name="name"
-          placeholder="John Doe"
+          placeholder="Dieter"
           value={String(data.name || '')}
           onChange={handleChange}
           error={errors.name}
@@ -43,7 +43,7 @@ export default function StepPersonal({ data, update, errors }: StepProps) {
         <FormInput
           label="Discord Username"
           name="discord_user_name"
-          placeholder="Example#0001"
+          placeholder="Example"
           value={String(data.discord_user_name || '')}
           onChange={handleChange}
           error={errors.discord_user_name}
@@ -64,7 +64,7 @@ export default function StepPersonal({ data, update, errors }: StepProps) {
         <FormInput
           label="Minecraft Username"
           name="minecraft_user"
-          placeholder="Notch"
+          placeholder="xXThomasXx"
           value={String(data.minecraft_user || '')}
           onChange={handleChange}
           error={errors.minecraft_user}
