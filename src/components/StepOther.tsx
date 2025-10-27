@@ -1,6 +1,6 @@
 'use client'
 
-import { ChangeEvent } from 'react'
+import {ChangeEvent, ReactNode} from 'react'
 import { FormTextarea } from '@/components/ui/FormTextarea'
 
 interface StepProps {
@@ -63,23 +63,36 @@ export default function StepOther({ data, update, errors }: StepProps) {
 const checks = [
   {
     name: 'other_check_1',
-    label:
-      'I confirm that I meet all basic requirements (age, premium account, hardware, etc.).',
+    label: (
+      <>
+        I agree that my personal data provided in this application may, under certain circumstances,
+        be shared with third parties. Furthermore, I accept the{' '}
+        <a
+          href="https://allay-studios.com/privacy"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-400 hover:text-blue-300 underline decoration-blue-500"
+        >
+          Privacy Policy
+        </a>{' '}
+        and consent to its terms.
+      </>
+    ),
   },
   {
     name: 'other_check_2',
     label:
-      'I understand that this application is reviewed manually and that I may be contacted via Discord.',
+      'I understand that my application will be automatically rejected if I inquire about its review status or attempt to influence the decision-making process.',
   },
   {
     name: 'other_check_3',
     label:
-      'I confirm that all provided information is true and complete to the best of my knowledge.',
+      'I confirm that all information provided in this form is accurate and truthful. I acknowledge that providing false information may result in a permanent ban and exclusion from future applications.',
   },
 ]
 
 interface CheckProps {
-  label: string
+  label: ReactNode
   name: string
   checked: boolean
   onChange: (e: ChangeEvent<HTMLInputElement>) => void

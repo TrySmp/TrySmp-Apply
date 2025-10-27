@@ -37,7 +37,7 @@ export default function StepQuestions({ data, update, errors }: StepProps) {
 
 const questions = [
   {
-    label: 'Why do you want to apply for TrySmp?',
+    label: 'Why do you want to apply at TrySmp?',
     name: 'question_why_apply_trysmp',
     placeholder: 'Tell us why you want to join the TrySmp team...',
   },
