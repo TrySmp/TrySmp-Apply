@@ -159,7 +159,7 @@ export default function ApplyPage() {
               <h2 className="text-3xl font-semibold">Application submitted successfully</h2>
               <p className="text-gray-400 text-lg leading-relaxed max-w-xl mx-auto">
                 We&apos;ll reach out via Discord if everything looks good.<br />
-                Thanks for applying to <span className="text-blue-400 font-semibold">TrySmp</span> 💙
+                Thanks for applying at <span className="text-green-400 font-semibold">TrySmp</span> 💚
               </p>
             </div>
           </section>
