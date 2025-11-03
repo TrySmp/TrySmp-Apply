@@ -7,7 +7,7 @@ import {
   bigint,
 } from 'drizzle-orm/mysql-core'
 
-export const applications = mysqlTable('applications', {
+export const applications = mysqlTable('web_applications', {
   id: serial('id').primaryKey(),
 
   // --- Basic applicant info ---
