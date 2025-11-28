@@ -55,7 +55,7 @@ export default function ApplyPage() {
     setFormData((prev) => ({ ...prev, [key]: value }))
 
   return (
-    <main className="min-h-screen w-full bg-gradient-to-b from-gray-950 via-gray-900 to-black text-white flex flex-col items-center py-16 px-6 overflow-hidden relative">
+    <main className="flex flex-col items-center py-16 px-6 overflow-hidden relative">
       <div
         className={`w-full max-w-3xl space-y-16 transition-all duration-700 ${
           loading ? 'opacity-50 pointer-events-none' : 'opacity-100'
